@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
         buttons.forEach(button => {
             button.addEventListener('click', async function () {
                 if (this.id === 'download') {
-                    window.location.href = '/WLMxWSP WebPage/page/download.html';
+                    window.location.href = '/WLMxWhatsapp/WLMxWSP WebPage/page/download.html';
                 } else if (this.id === 'download-link') {
                     const usuario = "lTunix";
                     const repositorio = "WLMxWhatsapp";
