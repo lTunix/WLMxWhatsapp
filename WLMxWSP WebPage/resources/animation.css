@@ -1,0 +1,79 @@
+.emoji-rain {
+    position: absolute;
+    overflow: hidden;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent),
+                linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent),
+                        linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    mask-composite: intersect;
+    -webkit-mask-composite: destination-in;
+}
+
+@keyframes animation {
+    0% {
+        transform: translate(var(--x-start), var(--y-start)) rotate(0);
+    }
+    100% {
+        transform: translate(var(--x-end), var(--y-end)) rotate(50deg);
+    }
+    
+}
+
+.rainDrop {
+    font-size: var(--sz);
+    filter: blur(var(--blur));
+    opacity: var(--o);
+    animation: animation 20s linear infinite;
+    transform: translate(var(--x-start), -15vh)rotate(0);
+
+}
+
+.emoji--s {
+    --sz: 2rem;
+    --blur: 1px;
+    --o: 1;
+    --x-start: 50vw;
+    --x-end: 0;
+    --y-start: 2vh;
+    --y-end: 100vh;
+    position: absolute;
+}
+
+.emoji--m {
+    --sz: 4rem;
+    --blur: 2px;
+    --o: 0.6;
+    --x-start: 50vw;
+    --x-end: 35vh;
+    --y-start: 70vh;
+    --y-end: 100vh;
+    z-index: 50;
+    position: absolute;
+}
+
+.emoji--l {
+    --sz: 6rem;
+    --blur: 0px;
+    --o: 1;
+    --x-start: 50vw;
+    --x-end: 50vh;
+    --y-start: 0;
+    --y-end: 110vh;
+    z-index: 80;
+    position: absolute;
+}
+
+.emoji--xl {
+    --sz: 12rem;
+    --blur: 0px;
+    --o: 1;
+    --x-start: 50vw;
+    --x-end: 20vh;
+    --y-start: 0;
+    --y-end: 120vh;
+    z-index: 100;
+    position: absolute;
+}
