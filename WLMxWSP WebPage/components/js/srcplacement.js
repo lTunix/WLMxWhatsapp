@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const headerPlaceholder = document.getElementById("header-placeholder");
     headerPlaceholder.classList.add("header");
 
-    fetch('/components/header.html')
+    fetch('/WLMxWSP WebPage/components/header.html')
         .then(response => response.text())
         .then(data => {
             headerPlaceholder.innerHTML = data;
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const footerPlaceholder = document.getElementById("footer-placeholder");
     footerPlaceholder.classList.add("footer");
 
-    fetch('/components/footer.html')
+    fetch('/WLMxWSP WebPage/components/footer.html')
         .then(response => response.text())
         .then(data => {
             footerPlaceholder.innerHTML = data;

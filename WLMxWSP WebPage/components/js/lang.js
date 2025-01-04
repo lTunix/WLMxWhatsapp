@@ -7,7 +7,7 @@ function googleTranslateElementInit() {
     let checkElement = setInterval(() => {
         var a = document.getElementById(":0.targetLanguage").children[0];
         var iframe = document.querySelector('[id=":1.container"]')
-        if (a && a.length > 0) {
+        if (a && a.length > 0 && navigator.language != 'es') {
             a.dispatchEvent(new Event('change')); 
             isIframe = true;
             if(iframe && isIframe) {
@@ -16,6 +16,5 @@ function googleTranslateElementInit() {
                 clearInterval(checkElement);
             }
         }
-        console.log("Sigue esperando...")
     }, 500);
 }
