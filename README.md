@@ -17,7 +17,7 @@ Puedes apoyarme a través de los siguientes enlaces:
 
 ## Descarga
 
-[![WLX x Whatsapp](https://img.shields.io/badge/WLX-Whatsapp-25d366)](https://github.com/lTunix/WLMxWhatsapp/releases/latest/download/WLM.x.Whatsapp.Setup.1.0.4.exe)
+[![WLX x Whatsapp](https://img.shields.io/badge/WLX-Whatsapp-25d366)](https://github.com/lTunix/WLMxWhatsapp/releases/latest/download/WLM.x.Whatsapp.Setup.1.0.5.exe)
 
 ## Pantallas
 
